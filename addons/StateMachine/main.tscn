@@ -6,8 +6,26 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="GraphEdit" type="GraphEdit" parent="."]
-margin_right = 977.0
-margin_bottom = 485.0
+margin_left = 2.64075
+margin_top = 53.2553
+margin_right = 979.641
+margin_bottom = 538.255
 scroll_offset = Vector2( -40, -40 )
+snap_distance = 40
+
+[node name="ToolButton2" type="ToolButton" parent="."]
+margin_left = 35.6503
+margin_top = 1.32038
+margin_right = 64.6503
+margin_bottom = 23.3204
+text = "tst"
+flat = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="ToolButton2" to="." method="_on_ToolButton2_pressed"]
